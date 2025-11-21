@@ -1,6 +1,6 @@
 
 ---
-title: TXDCB( 天下单词表)  首页
+title: 首页 - TXDCB : 天下单词表 
 description: 
 publish: true
 tags: 
