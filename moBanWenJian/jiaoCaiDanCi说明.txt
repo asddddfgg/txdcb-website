@@ -1,0 +1,271 @@
+---
+# ======================
+# TXDCB 天下单词表 - 页面元数据
+# ======================
+# 【核心标识】
+title: "页面完整标题 | TXDCB 天下单词表"
+description: "页面的详细描述，用于SEO和预览。建议160字符以内，包含核心关键词。"
+publish: true
+
+# 【品牌与SEO】
+site_name: "TXDCB 天下单词表"
+slogan: "全球教材词汇导航"
+seo_core_keywords: "单词表, 词汇表, TXDCB"
+canonicalUrl: "/自定义页面路径" # 可选，不填则使用默认文件名
+
+# 【内容分类】
+category: "" # 如：中小学英语, 大学英语, 出国考试
+subject: "英语" # 学科
+level: "" # 如：小学, 初中, 高中, CET-4, 雅思
+country: "中国" # 内容适用国家
+
+# 【教材信息】
+textbook_series: "" # 如：人教版, 牛津译林版, 新概念
+textbook_name: "" # 教材全名
+grade: "" # 年级
+semester: "" # 上册/下册
+publisher: "" # 出版社
+unit_range: "" # 覆盖单元，如：Unit 1-5
+
+# 【词汇信息】
+word_count: 0 # 本页单词总数
+has_phonetic: true # 是否包含音标
+has_translation: true # 是否包含中文释义
+has_example_sentence: false # 是否包含例句
+language: "zh-CN" # 页面内容主要语言
+
+# 【业务与受众】
+target_audience: "" # 如：初中生, 高中生, 大学生, 教师
+cpc_potential: "medium" # 广告潜力: low/medium/high
+primary_region: "国内" # 主要流量地区: 国内/国际/混合
+
+# 【关系网络】
+prerequisite: "" # 学习前提，如：[[小学英语总复习单词表]]
+next_lesson: "" # 后续学习，如：[[七年级下册单词表]]
+related_books: [] # 相关教材，如：[[牛津英语同级单词表]]
+see_also: [] # 扩展阅读，如：[[同主题词汇总结]]
+
+# 【展示设置】
+cover_image: "" # 封面图路径，如：assets/cover.jpg
+layout: "vocabulary-table" # 页面布局模板
+featured: false # 是否在首页推荐
+
+# 【时间管理】
+date: {{date}} # 创建日期（自动填充）
+update: {{date}} # 更新日期（自动填充）
+---
+
+上述信息给我超详细讲解，尤其在页面显示、seo、和dataview上，
+好的，这是一个极其详尽的讲解，将把每个部分的“为什么”和“怎么做”都讲清楚，特别是在页面显示、SEO和Dataview应用上。
+
+一、整体理解：Front Matter 是什么？
+比喻： 您笔记的 “身份证” 和 “产品说明书”。
+
+对人：快速了解笔记核心信息。
+
+对机器：告诉Obsidian插件、搜索引擎这个页面是什么，如何分类、如何展示、以及如何与其他页面关联。
+
+您提供的模板，是一套为“TXDCB天下单词表”这个项目量身定制的、极其完备的元数据体系。
+
+二、分层详解
+【核心标识】- 页面的生命线
+yaml
+
+Copy
+
+Download
+title: "页面完整标题 | TXDCB 天下单词表"
+description: "页面的详细描述，用于SEO和预览。建议160字符以内，包含核心关键词。"
+publish: true
+title:
+
+SEO核心：这是搜索引擎结果中显示的第一行大标题，也是浏览器标签页上的标题。格式 [具体内容] + [品牌] 是标准做法，既瞄准长尾关键词，又强化品牌。
+
+示例：“新概念英语第一册单词表 | TXDCB 天下单词表”
+
+description:
+
+SEO核心：这是显示在搜索结果标题下方的描述片段。搜索引擎虽不一定完全采用，但会参考。描述精彩能提高点击率。
+
+页面显示：一些网站主题会将该描述显示在文章顶部，作为摘要。
+
+publish:
+
+功能核心：这是发布开关。当您使用Quartz、Gatsby等静态站点生成器时，只有 publish: true 的页面才会被构建并发布到网上。对于私密笔记，设为 false。
+
+【品牌与SEO】- 统一您的数字形象
+yaml
+
+Copy
+
+Download
+site_name: "TXDCB 天下单词表"
+slogan: "全球教材词汇导航"
+seo_core_keywords: "单词表, 词汇表, TXDCB"
+canonicalUrl: "/自定义页面路径"
+site_name & slogan:
+
+页面显示：在您网站的页眉（Header） 或页脚（Footer） 全局显示，强化品牌认知。slogan 是您品牌战略的浓缩。
+
+seo_core_keywords:
+
+传统SEO：过去很重要，现在搜索引擎权重降低，但仍有参考价值，可以列出页面核心关键词。
+
+Dataview应用：可以用来做内容聚合，例如“找出所有包含‘雅思’关键词的页面”。
+
+canonicalUrl:
+
+高级SEO：用于解决重复内容问题。如果同一个单词表有多个网址，用它来告诉搜索引擎哪个是“主版本”，避免SEO权重分散。
+
+【内容分类】&【教材信息】- 构建内容骨架
+这部分是Dataview的黄金字段，是您未来进行自动化分类、筛选和关联的基石。
+
+yaml
+
+Copy
+
+Download
+category: "中小学英语"
+level: "初中"
+textbook_series: "人教版"
+grade: "七年级"
+unit_range: "Unit 1-5"
+页面显示：一个设计良好的网站主题，会把这些信息像“面包屑导航”或“标签”一样展示在页面顶部，例如：首页 > 中小学英语 > 初中 > 人教版 > 七年级上册。这让用户清晰知道自己的位置。
+
+Dataview应用（核心价值）：
+
+创建索引页：您可以为每个分类创建自动更新的索引页。
+
+示例：创建“所有人教版初中单词表”页面
+
+markdown
+
+Copy
+
+Download
+```dataview
+TABLE word_count, unit_range
+FROM #单词表
+WHERE textbook_series = "人教版" AND level = "初中"
+SORT grade, textbook_name
+```
+示例：创建“所有雅思备考资料”页面
+
+markdown
+
+Copy
+
+Download
+```dataview
+LIST
+FROM ""
+WHERE contains(category, "出国考试") OR contains(level, "雅思")
+```
+【词汇信息】&【业务与受众】- 精细化运营与变现
+yaml
+
+Copy
+
+Download
+word_count: 328
+has_phonetic: true
+has_example_sentence: false
+target_audience: "初中生"
+cpc_potential: "medium"
+primary_region: "国内"
+页面显示：可以在页面侧边栏或顶部以“信息卡”形式展示，例如：“本词表共328词”、“包含音标”、“适合初中生”。
+
+Dataview应用：
+
+为用户筛选：创建一个“工具推荐页”，只推荐 has_example_sentence: true 的单词表给需要例句的高级学习者。
+
+为运营服务：快速找出高价值内容。
+
+markdown
+
+Copy
+
+Download
+```dataview
+TABLE word_count, target_audience
+FROM #单词表
+WHERE cpc_potential = "high" AND primary_region = "国际"
+SORT word_count DESC
+```
+这个查询能直接帮您定位到广告收益潜力最高的内容，便于您优先优化和推广。
+
+【关系网络】- 打造沉浸式学习路径
+这是Obsidian作为“关联型数据库”的精髓。
+
+yaml
+
+Copy
+
+Download
+prerequisite: "[[小学英语总复习单词表]]"
+next_lesson: "[[人教版英语七年级下册单词表]]"
+related_books: ["[[牛津英语七年级上册单词表]]"]
+see_also: ["[[初中英语核心500词]]"]
+页面显示：
+
+在页面底部自动生成“上一篇/下一篇”导航。
+
+生成“相关推荐”或“学完本课继续学习”板块。
+
+这能大幅降低跳出率，增加页面浏览量。
+
+Dataview应用：
+
+您可以创建一个“学习路径图”笔记，使用Dataview自动查询并展示以当前笔记为中心的知识网络。
+
+自动检查“死链”（指向不存在的笔记），帮您完善内容体系。
+
+【展示设置】&【时间管理】- 控制外观与时效
+yaml
+
+Copy
+
+Download
+cover_image: "assets/pep-grade7-cover.jpg"
+layout: "vocabulary-table"
+featured: false
+date: 2023-10-27
+update: 2024-05-16
+cover_image:
+
+页面显示：作为文章的特色图片，在社交媒体分享时也会被抓取。
+
+layout:
+
+功能核心：告诉网站生成器，这个页面应该使用哪个模板文件来渲染。vocabulary-table 模板可以优化表格显示，而 article 模板可能更适合博文。
+
+featured:
+
+页面显示：用于在网站的首页“推荐”区域或专题页面中突出显示重要内容。
+
+Dataview应用：在首页的Dataview查询中，WHERE featured = true 来轮播推荐内容。
+
+date & update:
+
+页面显示：通常显示在文章标题下方，update 时间向用户表明内容经过了维护，是新鲜、可靠的。
+
+SEO：搜索引擎喜欢新鲜的内容。定期更新并修改 update 时间，有助于维持排名。
+
+三、实战工作流建议
+创建新笔记：一键粘贴模板。
+
+填写Front Matter：像填表一样，先完成这个“身份证”。这是最重要的一步，决定了后续所有自动化操作的可能。
+
+编写正文内容。
+
+创建各种索引页：
+
+所有单词表.md (按教材系列索引)
+
+高效学习路径.md (利用 prerequisite 和 next_lesson 关联)
+
+高价值内容.md (利用 cpc_potential 筛选)
+
+首页.md (展示 featured: true 的内容)
+
+通过这套体系，您的知识库不再是一盘散沙，而是一个有分类、有关联、能自驱动、能为您的战略目标（SEO、品牌、变现）服务的活生态系统。
